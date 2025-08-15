@@ -1,0 +1,14 @@
+# .ruff.toml
+target-version = "py311"   # <- set to match your Python (see below)
+line-length = 100
+indent-width = 4
+
+[lint]
+select = ["E", "F", "I", "UP", "D", "RUF"]
+ignore = [
+  "D203",  # no blank line before class (conflicts with D211)
+  "D213",  # multi-line summary second line (conflicts with D212)
+]
+
+[lint.pydocstyle]
+convention = "google"

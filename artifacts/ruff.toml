@@ -1,0 +1,15 @@
+target-version = "py310"
+
+line-length = 100
+indent-width = 4
+
+[lint]
+select = [
+    "E","F","I","D","UP","RUF",
+]
+ignore = [
+    "D203","D213",
+]
+
+[lint.pydocstyle]
+convention = "google"
